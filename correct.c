@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include "correct.h"
 
 char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 char *delimiters = "()[]{}<>,?;.:/=+-_$*\"'";
@@ -14,10 +15,4 @@ char *toLowerCase(char *word) {
     }
 
     return word;
-}
-
-
-
-int main (int argc, char **argv) {
-    return 0;
 }
