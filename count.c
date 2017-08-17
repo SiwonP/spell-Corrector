@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "treatment.h"
+#include "count.h"
 
 char **splitWordsFromReferenceText(FILE *file)
 {
@@ -12,9 +12,19 @@ char **splitWordsFromReferenceText(FILE *file)
     char c;
     c = fgetc(file);
     
-    while(c != EOF) {
+    while (c != EOF) {
 
     }
 
     return splits;
+}
+
+Counter *countSplits(char **splits)
+{
+    Counter *res = malloc(300 * sizeof(Counter));
+
+    while (splits) {
+    }
+
+    return res;
 }
